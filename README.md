@@ -2,7 +2,9 @@ Welcome to t3rn, a Modular Interoperability Layer designed for fast, secure, and
 Docs : [t3rn docs](https://docs.t3rn.io/intro) | X : [t3rn](https://x.com/t3rn_io)
 
 ## t3rn Executor Setup Guide
+
 This guide provides a method to install the `t3rn` executor as a systemd service, ensuring more reliable operation compared to using `screen`
+
 ---
 
 ## Installation Steps
