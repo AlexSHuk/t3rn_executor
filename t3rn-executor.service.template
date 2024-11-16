@@ -3,14 +3,14 @@ Description=t3rn Executor Service
 After=network-online.target
 
 [Service]
-ExecStart=$EXECUTOR_BINARY_DIR/executor
-WorkingDirectory=$EXECUTOR_WORKDIR
+ExecStart={{EXECUTOR_BINARY_PATH}}
+WorkingDirectory={{EXECUTOR_WORKDIR}}
 Environment=EXECUTOR_PROCESS_ORDERS=false
 Environment=EXECUTOR_PROCESS_CLAIMS=true
 Environment=LOG_LEVEL=debug
 Environment=LOG_PRETTY=false
 Environment=NODE_ENV=testnet
-Environment=PRIVATE_KEY_LOCAL=<replace_your_privatekey>
+Environment=PRIVATE_KEY_LOCAL=<ypour_private_key>
 Environment=ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
 Restart=on-failure
 RestartSec=3
