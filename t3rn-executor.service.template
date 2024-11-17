@@ -5,7 +5,7 @@ After=network-online.target
 [Service]
 ExecStart={{EXECUTOR_BINARY_PATH}}
 WorkingDirectory={{EXECUTOR_WORKDIR}}
-Environment=EXECUTOR_PROCESS_ORDERS=false
+Environment=EXECUTOR_PROCESS_ORDERS=true
 Environment=EXECUTOR_PROCESS_CLAIMS=true
 Environment=LOG_LEVEL=debug
 Environment=LOG_PRETTY=false
